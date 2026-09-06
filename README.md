@@ -2,7 +2,6 @@
 
 **Live demo:** [https://musical-macaron-206a74.netlify.app/](https://musical-macaron-206a74.netlify.app/)
 
-A React chat UI with browser-style find-in-page search (Ctrl+F / Cmd+F).
 
 ## Run
 
@@ -13,12 +12,6 @@ npm run dev
 
 Open the URL shown in the terminal (usually `http://localhost:5173`).
 
-Production build:
-
-```bash
-npm run build
-npm run preview
-```
 
 ## Features
 
@@ -47,7 +40,7 @@ npm run preview
 
 1. Open the [live demo](https://musical-macaron-206a74.netlify.app/).
 2. Press **Ctrl+F** / **Cmd+F** — the find bar opens, focused, ready to type.
-3. Search for a word that appears in several messages (try `the` or a sender name). Highlights appear in message text and author names; the counter shows `1/N`.
+3. Search for a word that appears in several messages (try `order` or a sender name). Highlights appear in message text and author names; the counter shows `1/N`.
 4. Press **Enter** (or the down chevron) to jump to the next match. **Shift+Enter** (or the up chevron) goes to the previous one. Navigation wraps. The active hit is orange and scrolls into view.
 5. Change the query — the counter resets to the first match of the new term. An empty result shows `0/0` in red.
 6. Press **Esc** or the close button. Highlights clear; the query is kept.
