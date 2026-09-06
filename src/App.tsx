@@ -5,6 +5,7 @@ import FindBar from "./components/FindBar";
 import items from "./assets/msgs.json";
 import type { ChatMessageItem } from "./types/chat";
 import { useFindBarVisibility } from "./hooks/useFindBarVisibility";
+import { buildMatches } from "./utils/search";
 import styles from "./App.module.css";
 
 const messages = items as ChatMessageItem[];
@@ -12,6 +13,8 @@ const messages = items as ChatMessageItem[];
 function App() {
   const [isOpen, setIsOpen] = useFindBarVisibility();
   const [searchTerm, setSearchTerm] = useState("");
+
+  const matches = buildMatches(messages, searchTerm);
 
   return (
     <div className={styles.screen}>
@@ -21,7 +24,13 @@ function App() {
         </div>
         <ul className={styles.messages}>
           {messages.map((item) => (
-            <ChatMessage key={item.id} item={item} />
+            <ChatMessage
+              key={item.id}
+              item={item}
+              searchTerm={searchTerm}
+              activeField={null}
+              activeOccurrence={null}
+            />
           ))}
         </ul>
       </div>
@@ -29,7 +38,7 @@ function App() {
         <FindBar
           searchTerm={searchTerm}
           onSearchTermChange={setSearchTerm}
-          matchCount={0}
+          matchCount={matches.length}
           activeIndex={0}
           onNext={() => {}}
           onPrev={() => {}}

@@ -2,6 +2,8 @@ import { useEffect, useRef } from "react";
 import { ChevronDown, ChevronUp, X } from "lucide-react";
 import styles from "./FindBar.module.css";
 
+//TODO:Pressing Enter also go to next match
+
 type FindBarProps = {
   searchTerm: string;
   onSearchTermChange: (term: string) => void;
