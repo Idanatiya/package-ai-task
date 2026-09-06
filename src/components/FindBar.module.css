@@ -1,0 +1,117 @@
+/* Fixed layer mirrors the chat panel's centering so the bar stays flush with
+   the card's right edge instead of drifting on wide screens. */
+.layer {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  padding: 1.25rem;
+  pointer-events: none;
+}
+
+.aligner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0.75rem;
+}
+
+.bar {
+  pointer-events: auto;
+  display: flex;
+  align-items: center;
+  gap: 0.125rem;
+  height: 2.5rem;
+  padding: 0 0.25rem 0 0.75rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.625rem;
+  background-color: #fff;
+  box-shadow:
+    0 1px 2px rgba(16, 24, 40, 0.04),
+    0 8px 24px rgba(16, 24, 40, 0.08);
+  animation: enter 140ms ease-out;
+}
+
+@keyframes enter {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+}
+
+.input {
+  width: 12rem;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: #111827;
+  font-size: 0.875rem;
+}
+
+.input::placeholder {
+  color: #9ca3af;
+}
+
+/* Reserved width keeps the bar from resizing as the counter changes. */
+.counter {
+  min-width: 3.25rem;
+  color: #6b7280;
+  font-size: 0.75rem;
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}
+
+.counterEmpty {
+  color: #dc2626;
+}
+
+.divider {
+  width: 1px;
+  height: 1.25rem;
+  margin: 0 0.375rem;
+  background-color: #e5e7eb;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  padding: 0;
+  border: 0;
+  border-radius: 0.375rem;
+  background: transparent;
+  color: #4b5563;
+  cursor: pointer;
+  transition:
+    background-color 120ms ease,
+    color 120ms ease;
+}
+
+.button:hover:not(:disabled) {
+  background-color: #f3f4f6;
+  color: #111827;
+}
+
+.button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.button:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 1px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bar {
+    animation: none;
+  }
+
+  .button {
+    transition: none;
+  }
+}

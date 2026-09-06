@@ -1,45 +1,23 @@
+import { useState } from "react";
 import ChatHeader from "./components/ChatHeader";
 import ChatMessage from "./components/ChatMessage";
+import FindBar from "./components/FindBar";
 import items from "./assets/msgs.json";
 import type { ChatMessageItem } from "./types/chat";
+import { useFindBarVisibility } from "./hooks/useFindBarVisibility";
 import styles from "./App.module.css";
-import { useEffect, useState } from "react";
 
 const messages = items as ChatMessageItem[];
 
-const useOpenFloatingPanel = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  useEffect(() => {
-    const handleKeyDown = (event: KeyboardEvent) => {
-      const key = event.key;
-      const isCtrlOrCmd = event.metaKey || event.ctrlKey;
-      // Create util for it
-      if (key.toLowerCase() === "f" && isCtrlOrCmd) {
-        event.preventDefault();
-        setIsOpen(true);
-      }
-
-      if (key === "Escape") {
-        setIsOpen(false);
-      }
-    };
-
-    window.addEventListener("keydown", handleKeyDown);
-
-    return () => window.removeEventListener("keydown", handleKeyDown);
-  }, []);
-
-  return [isOpen, setIsOpen] as const;
-};
-
 function App() {
-  const [isOpen, setIsOpen] = useOpenFloatingPanel();
+  const [isOpen, setIsOpen] = useFindBarVisibility();
+  const [searchTerm, setSearchTerm] = useState("");
+
   return (
     <div className={styles.screen}>
       <div className={styles.panel}>
         <div className={styles.header}>
           <ChatHeader />
-          {isOpen && <button>Close</button>}
         </div>
         <ul className={styles.messages}>
           {messages.map((item) => (
@@ -47,6 +25,17 @@ function App() {
           ))}
         </ul>
       </div>
+      {isOpen && (
+        <FindBar
+          searchTerm={searchTerm}
+          onSearchTermChange={setSearchTerm}
+          matchCount={0}
+          activeIndex={0}
+          onNext={() => {}}
+          onPrev={() => {}}
+          onClose={() => setIsOpen(false)}
+        />
+      )}
     </div>
   );
 }
