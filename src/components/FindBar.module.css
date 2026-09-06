@@ -67,6 +67,10 @@
   color: #dc2626;
 }
 
+.counterPending {
+  opacity: 0.4;
+}
+
 .divider {
   width: 1px;
   height: 1.25rem;

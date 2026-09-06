@@ -7,6 +7,8 @@ import styles from "./FindBar.module.css";
 type FindBarProps = {
   searchTerm: string;
   onSearchTermChange: (term: string) => void;
+  /** True while the counter still reflects the previous term. */
+  isPending: boolean;
   matchCount: number;
   activeIndex: number;
   onNext: () => void;
@@ -17,6 +19,7 @@ type FindBarProps = {
 export default function FindBar({
   searchTerm,
   onSearchTermChange,
+  isPending,
   matchCount,
   activeIndex,
   onNext,
@@ -33,6 +36,16 @@ export default function FindBar({
   const hasTerm = searchTerm.trim().length > 0;
   const hasMatches = matchCount > 0;
 
+  // While pending the count belongs to the previous term, so hold back the
+  // "no results" red until it has caught up and the zero is real.
+  const counterClassName = [
+    styles.counter,
+    isPending && styles.counterPending,
+    hasTerm && !hasMatches && !isPending && styles.counterEmpty,
+  ]
+    .filter(Boolean)
+    .join(" ");
+
   return (
     <div className={styles.layer}>
       <div className={styles.aligner}>
@@ -46,12 +59,7 @@ export default function FindBar({
             placeholder="Find in chat"
             aria-label="Search messages"
           />
-          <span
-            className={`${styles.counter} ${
-              hasTerm && !hasMatches ? styles.counterEmpty : ""
-            }`.trim()}
-            aria-live="polite"
-          >
+          <span className={counterClassName} aria-live="polite">
             {hasTerm ? `${hasMatches ? activeIndex + 1 : 0}/${matchCount}` : ""}
           </span>
           <span className={styles.divider} />

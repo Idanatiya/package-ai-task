@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useDeferredValue, useState } from "react";
 import ChatHeader from "./components/ChatHeader";
 import ChatMessage from "./components/ChatMessage";
 import FindBar from "./components/FindBar";
@@ -16,9 +16,15 @@ function App() {
   const [isOpen, setIsOpen] = useFindBarVisibility();
   const [searchTerm, setSearchTerm] = useState("");
 
-  const matches = buildMatches(messages, searchTerm);
+  // The input keeps the live term so keystrokes paint immediately. Everything
+  // downstream reads the deferred one, which React renders at transition
+  // priority and can throw away when the next key arrives mid-render.
+  const deferredTerm = useDeferredValue(searchTerm);
+  const isPending = searchTerm !== deferredTerm;
+
+  const matches = buildMatches(messages, deferredTerm);
   const { activeIndex, next, prev, reset } = useMatchNavigation(matches.length);
-  useScrollToActiveMatch(activeIndex, searchTerm);
+  useScrollToActiveMatch(activeIndex);
 
   const activeMatch = matches[activeIndex] ?? null;
 
@@ -44,7 +50,7 @@ function App() {
               <ChatMessage
                 key={item.id}
                 item={item}
-                searchTerm={searchTerm}
+                searchTerm={deferredTerm}
                 activeField={active?.field ?? null}
                 activeOccurrence={active?.occurrence ?? null}
               />
@@ -56,6 +62,7 @@ function App() {
         <FindBar
           searchTerm={searchTerm}
           onSearchTermChange={handleSearchTermChange}
+          isPending={isPending}
           matchCount={matches.length}
           activeIndex={activeIndex}
           onNext={next}
