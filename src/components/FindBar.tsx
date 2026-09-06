@@ -1,13 +1,11 @@
 import { useEffect, useRef } from "react";
-import { ChevronDown, ChevronUp, X } from "lucide-react";
+import clsx from "clsx";
+import FindBarActions from "./FindBarActions";
 import styles from "./FindBar.module.css";
-
-//TODO:Pressing Enter also go to next match
 
 type FindBarProps = {
   searchTerm: string;
   onSearchTermChange: (term: string) => void;
-  /** True while the counter still reflects the previous term. */
   isPending: boolean;
   matchCount: number;
   activeIndex: number;
@@ -28,23 +26,27 @@ export default function FindBar({
 }: FindBarProps) {
   const inputRef = useRef<HTMLInputElement>(null);
 
-  // The bar unmounts on close, so mounting is the only time focus is needed.
   useEffect(() => {
-    inputRef.current?.focus();
+    const input = inputRef.current;
+    if (!input) return;
+
+    input.focus();
+    input.select();
   }, []);
 
   const hasTerm = searchTerm.trim().length > 0;
   const hasMatches = matchCount > 0;
 
-  // While pending the count belongs to the previous term, so hold back the
-  // "no results" red until it has caught up and the zero is real.
-  const counterClassName = [
-    styles.counter,
-    isPending && styles.counterPending,
-    hasTerm && !hasMatches && !isPending && styles.counterEmpty,
-  ]
-    .filter(Boolean)
-    .join(" ");
+  const handleKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
+    if (event.key !== "Enter" || !hasMatches) return;
+
+    event.preventDefault();
+    if (event.shiftKey) {
+      onPrev();
+    } else {
+      onNext();
+    }
+  };
 
   return (
     <div className={styles.layer}>
@@ -56,39 +58,29 @@ export default function FindBar({
             type="text"
             value={searchTerm}
             onChange={(event) => onSearchTermChange(event.target.value)}
+            onKeyDown={handleKeyDown}
             placeholder="Find in chat"
+            autoComplete="off"
+            spellCheck={false}
             aria-label="Search messages"
           />
-          <span className={counterClassName} aria-live="polite">
+          <span
+            className={clsx(
+              styles.counter,
+              isPending && styles.counterPending,
+              hasTerm && !hasMatches && !isPending && styles.counterEmpty,
+            )}
+            aria-live="polite"
+          >
             {hasTerm ? `${hasMatches ? activeIndex + 1 : 0}/${matchCount}` : ""}
           </span>
           <span className={styles.divider} />
-          <button
-            type="button"
-            className={styles.button}
-            onClick={onPrev}
-            disabled={!hasMatches}
-            aria-label="Previous match"
-          >
-            <ChevronUp size={16} />
-          </button>
-          <button
-            type="button"
-            className={styles.button}
-            onClick={onNext}
-            disabled={!hasMatches}
-            aria-label="Next match"
-          >
-            <ChevronDown size={16} />
-          </button>
-          <button
-            type="button"
-            className={styles.button}
-            onClick={onClose}
-            aria-label="Close find bar"
-          >
-            <X size={16} />
-          </button>
+          <FindBarActions
+            hasMatches={hasMatches}
+            onPrev={onPrev}
+            onNext={onNext}
+            onClose={onClose}
+          />
         </div>
       </div>
     </div>

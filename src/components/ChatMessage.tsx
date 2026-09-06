@@ -1,58 +1,71 @@
-import type { ChatMessageItem, SearchableField } from "../types/chat";
+import clsx from "clsx";
+import { Headset, LifeBuoy, UserRound, type LucideIcon } from "lucide-react";
+import type { ChatMessageItem, SearchMatch } from "../types/chat";
 import HighlightedText from "./HighlightedText";
 import styles from "./ChatMessage.module.css";
 
 type ChatMessageProps = {
   item: ChatMessageItem;
   searchTerm: string;
-  /** Set only on the message holding the active match, null on every other. */
-  activeField: SearchableField | null;
-  activeOccurrence: number | null;
+  activeMatch: SearchMatch | null;
 };
 
-function getAvatarInitials(name: ChatMessageItem["from"]) {
-  const parts = name.split(" ").map((part) => part[0]);
-  return parts.join("");
+const SENDER_ICONS: Record<string, LucideIcon> = {
+  "Customer Service": Headset,
+  Support: LifeBuoy,
+  Agent: UserRound,
+};
+
+function getAvatarInitials(name: string): string {
+  return name
+    .split(" ")
+    .map((part) => part[0])
+    .join("");
+}
+
+function renderAvatar(from: string) {
+  const Icon = SENDER_ICONS[from];
+  if (Icon) return <Icon size={18} aria-hidden />;
+
+  return getAvatarInitials(from);
 }
 
 export default function ChatMessage({
   item,
   searchTerm,
-  activeField,
-  activeOccurrence,
+  activeMatch,
 }: ChatMessageProps) {
   const isIncoming = item.incoming;
 
   return (
-    <li
-      className={`${styles.message} ${isIncoming ? "" : styles.outgoing}`.trim()}
-    >
+    <li className={clsx(styles.message, !isIncoming && styles.outgoing)}>
       <div
-        className={`${styles.avatar} ${
-          isIncoming ? styles.avatarIncoming : styles.avatarOutgoing
-        }`}
+        className={clsx(
+          styles.avatar,
+          isIncoming ? styles.avatarIncoming : styles.avatarOutgoing,
+        )}
       >
-        {getAvatarInitials(item.from)}
+        {renderAvatar(item.from)}
       </div>
       <div
-        className={`${styles.bubble} ${
-          isIncoming ? styles.bubbleIncoming : styles.bubbleOutgoing
-        }`}
+        className={clsx(
+          styles.bubble,
+          isIncoming ? styles.bubbleIncoming : styles.bubbleOutgoing,
+        )}
       >
-        <div
-          className={`${styles.meta} ${
-            isIncoming ? "" : styles.metaOutgoing
-          }`.trim()}
-        >
+        <div className={clsx(styles.meta, !isIncoming && styles.metaOutgoing)}>
           <span
-            className={`${styles.from} ${
-              isIncoming ? styles.fromIncoming : styles.fromOutgoing
-            }`}
+            className={clsx(
+              styles.from,
+              isIncoming ? styles.fromIncoming : styles.fromOutgoing,
+            )}
           >
             <HighlightedText
               text={item.from}
               searchTerm={searchTerm}
-              activeOccurrence={activeField === "from" ? activeOccurrence : null}
+              activeOccurrence={
+                activeMatch?.field === "from" ? activeMatch.occurrence : null
+              }
             />
           </span>
         </div>
@@ -60,18 +73,22 @@ export default function ChatMessage({
           <HighlightedText
             text={item.text}
             searchTerm={searchTerm}
-            activeOccurrence={activeField === "text" ? activeOccurrence : null}
+            activeOccurrence={
+              activeMatch?.field === "text" ? activeMatch.occurrence : null
+            }
           />
         </p>
         <div
-          className={`${styles.timestampRow} ${
-            isIncoming ? styles.timestampRowIncoming : ""
-          }`.trim()}
+          className={clsx(
+            styles.timestampRow,
+            isIncoming && styles.timestampRowIncoming,
+          )}
         >
           <span
-            className={`${styles.timestamp} ${
-              isIncoming ? styles.timestampIncoming : ""
-            }`.trim()}
+            className={clsx(
+              styles.timestamp,
+              isIncoming && styles.timestampIncoming,
+            )}
           >
             {item.created}
           </span>

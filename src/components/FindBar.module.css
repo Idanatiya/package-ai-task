@@ -1,5 +1,3 @@
-/* Fixed layer mirrors the chat panel's centering so the bar stays flush with
-   the card's right edge instead of drifting on wide screens. */
 .layer {
   position: fixed;
   inset: 0;
@@ -54,7 +52,6 @@
   color: #9ca3af;
 }
 
-/* Reserved width keeps the bar from resizing as the counter changes. */
 .counter {
   min-width: 3.25rem;
   color: #6b7280;

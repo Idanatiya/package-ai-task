@@ -5,8 +5,7 @@ import FindBar from "./components/FindBar";
 import items from "./assets/msgs.json";
 import type { ChatMessageItem } from "./types/chat";
 import { useFindBarVisibility } from "./hooks/useFindBarVisibility";
-import { useMatchNavigation } from "./hooks/useMatchNavigation";
-import { useScrollToActiveMatch } from "./hooks/useScrollToActiveMatch";
+import { useFindNavigation } from "./hooks/useFindNavigation";
 import { buildMatches } from "./utils/search";
 import styles from "./App.module.css";
 
@@ -16,19 +15,15 @@ function App() {
   const [isOpen, setIsOpen] = useFindBarVisibility();
   const [searchTerm, setSearchTerm] = useState("");
 
-  // The input keeps the live term so keystrokes paint immediately. Everything
-  // downstream reads the deferred one, which React renders at transition
-  // priority and can throw away when the next key arrives mid-render.
   const deferredTerm = useDeferredValue(searchTerm);
   const isPending = searchTerm !== deferredTerm;
 
   const matches = buildMatches(messages, deferredTerm);
-  const { activeIndex, next, prev, reset } = useMatchNavigation(matches.length);
-  useScrollToActiveMatch(activeIndex);
+  const { activeIndex, next, prev, reset } = useFindNavigation(matches.length);
 
-  const activeMatch = matches[activeIndex] ?? null;
+  const highlightTerm = isOpen ? deferredTerm : "";
+  const highlightMatch = isOpen ? (matches[activeIndex] ?? null) : null;
 
-  // A new term rebuilds the array, so the old index no longer points anywhere.
   const handleSearchTermChange = (term: string) => {
     setSearchTerm(term);
     reset();
@@ -41,21 +36,16 @@ function App() {
           <ChatHeader />
         </div>
         <ul className={styles.messages}>
-          {messages.map((item) => {
-            // Narrowed to primitives so only the two affected bubbles re-render.
-            const active =
-              activeMatch?.messageId === item.id ? activeMatch : null;
-
-            return (
-              <ChatMessage
-                key={item.id}
-                item={item}
-                searchTerm={deferredTerm}
-                activeField={active?.field ?? null}
-                activeOccurrence={active?.occurrence ?? null}
-              />
-            );
-          })}
+          {messages.map((item) => (
+            <ChatMessage
+              key={item.id}
+              item={item}
+              searchTerm={highlightTerm}
+              activeMatch={
+                highlightMatch?.messageId === item.id ? highlightMatch : null
+              }
+            />
+          ))}
         </ul>
       </div>
       {isOpen && (

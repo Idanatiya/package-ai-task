@@ -4,7 +4,6 @@ import styles from "./HighlightedText.module.css";
 type HighlightedTextProps = {
   text: string;
   searchTerm: string;
-  /** Index of the hit to mark as active, or null when none of them is. */
   activeOccurrence: number | null;
 };
 
