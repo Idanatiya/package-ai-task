@@ -1,7 +1,10 @@
 # Package.ai FE Task -  Idan Atiya 
 
+
+
 **Live demo:** [https://musical-macaron-206a74.netlify.app/](https://musical-macaron-206a74.netlify.app/)
 
+Built in **React** instead of Vue, as discussed with Maor.
 
 ## Run
 
