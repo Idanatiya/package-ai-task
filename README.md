@@ -20,8 +20,8 @@ npm run preview
 
 ## Features
 
-- **Ctrl+F / Cmd+F** — open the find bar (reopen selects existing text)
-- **Esc** — close the bar (highlights clear; search text is kept for next open)
+- **Ctrl+F / Cmd+F** — open the find bar; the input is focused and any kept query is selected
+- **Esc** or the close button — close the bar (highlights clear; search text is kept for next open)
 - Search **message text** and **author** (`from`) from one input
 - **Enter** — next match · **Shift+Enter** — previous match
 - Wraparound navigation with match counter
@@ -43,5 +43,4 @@ npm run preview
 
 ## Tradeoffs
 
-- Scroll runs on next/prev only, not while typing a new term
 - No list virtualization (fine for ~250 messages)
