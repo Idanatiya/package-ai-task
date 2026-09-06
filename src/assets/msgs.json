@@ -1,0 +1,2502 @@
+[
+  {
+    "id": "msg_0",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "Jane Smith",
+    "initials": "A",
+    "text": "I need to cancel my order.",
+    "entityType": "MESSAGE",
+    "created": "01/01/24 12:00 AM"
+  },
+  {
+    "id": "msg_1",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Customer Service",
+    "initials": "A",
+    "text": "We appreciate your feedback!",
+    "entityType": "MESSAGE",
+    "created": "01/01/24 01:00 AM"
+  },
+  {
+    "id": "msg_2",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "Jane Smith",
+    "initials": "J",
+    "text": "Hi, I need help with my order.",
+    "entityType": "MESSAGE",
+    "created": "01/01/24 02:00 AM"
+  },
+  {
+    "id": "msg_3",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Customer Service",
+    "initials": "A",
+    "text": "We appreciate your feedback!",
+    "entityType": "MESSAGE",
+    "created": "01/01/24 03:00 AM"
+  },
+  {
+    "id": "msg_4",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "Alex Johnson",
+    "initials": "A",
+    "text": "My package was marked as delivered, but I didn't receive it.",
+    "entityType": "MESSAGE",
+    "created": "01/01/24 04:00 AM"
+  },
+  {
+    "id": "msg_5",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Support",
+    "initials": "A",
+    "text": "I'm checking the details now, one moment please.",
+    "entityType": "MESSAGE",
+    "created": "01/01/24 05:00 AM"
+  },
+  {
+    "id": "msg_6",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "Jane Smith",
+    "initials": "A",
+    "text": "My order was incorrect.",
+    "entityType": "MESSAGE",
+    "created": "01/01/24 06:00 AM"
+  },
+  {
+    "id": "msg_7",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Agent",
+    "initials": "A",
+    "text": "Your refund request has been initiated.",
+    "entityType": "MESSAGE",
+    "created": "01/01/24 07:00 AM"
+  },
+  {
+    "id": "msg_8",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "Jane Smith",
+    "initials": "X",
+    "text": "My package was marked as delivered, but I didn't receive it.",
+    "entityType": "MESSAGE",
+    "created": "01/01/24 08:00 AM"
+  },
+  {
+    "id": "msg_9",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Customer Service",
+    "initials": "A",
+    "text": "Let us know if you need further assistance.",
+    "entityType": "MESSAGE",
+    "created": "01/01/24 09:00 AM"
+  },
+  {
+    "id": "msg_10",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "Alex Johnson",
+    "initials": "A",
+    "text": "Hi, I need help with my order.",
+    "entityType": "MESSAGE",
+    "created": "01/01/24 10:00 AM"
+  },
+  {
+    "id": "msg_11",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Agent",
+    "initials": "A",
+    "text": "Your refund request has been initiated.",
+    "entityType": "MESSAGE",
+    "created": "01/01/24 11:00 AM"
+  },
+  {
+    "id": "msg_12",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "John Doe",
+    "initials": "A",
+    "text": "The tracking number is not updating.",
+    "entityType": "MESSAGE",
+    "created": "01/01/24 12:00 PM"
+  },
+  {
+    "id": "msg_13",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Customer Service",
+    "initials": "A",
+    "text": "Let us know if you need further assistance.",
+    "entityType": "MESSAGE",
+    "created": "01/01/24 01:00 PM"
+  },
+  {
+    "id": "msg_14",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "Jane Smith",
+    "initials": "A",
+    "text": "How do I return an item?",
+    "entityType": "MESSAGE",
+    "created": "01/01/24 02:00 PM"
+  },
+  {
+    "id": "msg_15",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Agent",
+    "initials": "A",
+    "text": "I will notify you once we receive an update.",
+    "entityType": "MESSAGE",
+    "created": "01/01/24 03:00 PM"
+  },
+  {
+    "id": "msg_16",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "Alex Johnson",
+    "initials": "X",
+    "text": "Can I modify my order before it ships?",
+    "entityType": "MESSAGE",
+    "created": "01/01/24 04:00 PM"
+  },
+  {
+    "id": "msg_17",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Customer Service",
+    "initials": "A",
+    "text": "Your refund request has been initiated.",
+    "entityType": "MESSAGE",
+    "created": "01/01/24 05:00 PM"
+  },
+  {
+    "id": "msg_18",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "John Doe",
+    "initials": "J",
+    "text": "My order was incorrect.",
+    "entityType": "MESSAGE",
+    "created": "01/01/24 06:00 PM"
+  },
+  {
+    "id": "msg_19",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Customer Service",
+    "initials": "A",
+    "text": "Let us know if you need further assistance.",
+    "entityType": "MESSAGE",
+    "created": "01/01/24 07:00 PM"
+  },
+  {
+    "id": "msg_20",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "Alex Johnson",
+    "initials": "A",
+    "text": "I have not received my package yet.",
+    "entityType": "MESSAGE",
+    "created": "01/01/24 08:00 PM"
+  },
+  {
+    "id": "msg_21",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Agent",
+    "initials": "A",
+    "text": "We are sorry for the delay, let me check with our delivery team.",
+    "entityType": "MESSAGE",
+    "created": "01/01/24 09:00 PM"
+  },
+  {
+    "id": "msg_22",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "John Doe",
+    "initials": "X",
+    "text": "Hi, I need help with my order.",
+    "entityType": "MESSAGE",
+    "created": "01/01/24 10:00 PM"
+  },
+  {
+    "id": "msg_23",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Support",
+    "initials": "A",
+    "text": "How can I assist you today?",
+    "entityType": "MESSAGE",
+    "created": "01/01/24 11:00 PM"
+  },
+  {
+    "id": "msg_24",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "Jane Smith",
+    "initials": "X",
+    "text": "The tracking number is not updating.",
+    "entityType": "MESSAGE",
+    "created": "01/02/24 12:00 AM"
+  },
+  {
+    "id": "msg_25",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Customer Service",
+    "initials": "A",
+    "text": "I will escalate this to the relevant team.",
+    "entityType": "MESSAGE",
+    "created": "01/02/24 01:00 AM"
+  },
+  {
+    "id": "msg_26",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "Jane Smith",
+    "initials": "J",
+    "text": "I was charged twice for my order.",
+    "entityType": "MESSAGE",
+    "created": "01/02/24 02:00 AM"
+  },
+  {
+    "id": "msg_27",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Support",
+    "initials": "A",
+    "text": "You can track your order using the following link.",
+    "entityType": "MESSAGE",
+    "created": "01/02/24 03:00 AM"
+  },
+  {
+    "id": "msg_28",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "Jane Smith",
+    "initials": "J",
+    "text": "Can I schedule a delivery at a specific time?",
+    "entityType": "MESSAGE",
+    "created": "01/02/24 04:00 AM"
+  },
+  {
+    "id": "msg_29",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Customer Service",
+    "initials": "A",
+    "text": "Thank you for your patience.",
+    "entityType": "MESSAGE",
+    "created": "01/02/24 05:00 AM"
+  },
+  {
+    "id": "msg_30",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "John Doe",
+    "initials": "J",
+    "text": "I have not received my package yet.",
+    "entityType": "MESSAGE",
+    "created": "01/02/24 06:00 AM"
+  },
+  {
+    "id": "msg_31",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Customer Service",
+    "initials": "A",
+    "text": "Your request has been processed successfully.",
+    "entityType": "MESSAGE",
+    "created": "01/02/24 07:00 AM"
+  },
+  {
+    "id": "msg_32",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "Alex Johnson",
+    "initials": "A",
+    "text": "Can I get a refund?",
+    "entityType": "MESSAGE",
+    "created": "01/02/24 08:00 AM"
+  },
+  {
+    "id": "msg_33",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Support",
+    "initials": "A",
+    "text": "I'm checking the details now, one moment please.",
+    "entityType": "MESSAGE",
+    "created": "01/02/24 09:00 AM"
+  },
+  {
+    "id": "msg_34",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "Jane Smith",
+    "initials": "X",
+    "text": "What is your refund policy?",
+    "entityType": "MESSAGE",
+    "created": "01/02/24 10:00 AM"
+  },
+  {
+    "id": "msg_35",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Support",
+    "initials": "A",
+    "text": "I'm checking the details now, one moment please.",
+    "entityType": "MESSAGE",
+    "created": "01/02/24 11:00 AM"
+  },
+  {
+    "id": "msg_36",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "Alex Johnson",
+    "initials": "X",
+    "text": "My package was marked as delivered, but I didn't receive it.",
+    "entityType": "MESSAGE",
+    "created": "01/02/24 12:00 PM"
+  },
+  {
+    "id": "msg_37",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Agent",
+    "initials": "A",
+    "text": "You can track your order using the following link.",
+    "entityType": "MESSAGE",
+    "created": "01/02/24 01:00 PM"
+  },
+  {
+    "id": "msg_38",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "Alex Johnson",
+    "initials": "A",
+    "text": "The tracking number is not updating.",
+    "entityType": "MESSAGE",
+    "created": "01/02/24 02:00 PM"
+  },
+  {
+    "id": "msg_39",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Support",
+    "initials": "A",
+    "text": "I will notify you once we receive an update.",
+    "entityType": "MESSAGE",
+    "created": "01/02/24 03:00 PM"
+  },
+  {
+    "id": "msg_40",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "John Doe",
+    "initials": "X",
+    "text": "I am experiencing an issue with the website.",
+    "entityType": "MESSAGE",
+    "created": "01/02/24 04:00 PM"
+  },
+  {
+    "id": "msg_41",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Agent",
+    "initials": "A",
+    "text": "How can I assist you today?",
+    "entityType": "MESSAGE",
+    "created": "01/02/24 05:00 PM"
+  },
+  {
+    "id": "msg_42",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "Jane Smith",
+    "initials": "X",
+    "text": "What is your refund policy?",
+    "entityType": "MESSAGE",
+    "created": "01/02/24 06:00 PM"
+  },
+  {
+    "id": "msg_43",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Customer Service",
+    "initials": "A",
+    "text": "Your refund request has been initiated.",
+    "entityType": "MESSAGE",
+    "created": "01/02/24 07:00 PM"
+  },
+  {
+    "id": "msg_44",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "Alex Johnson",
+    "initials": "X",
+    "text": "My order was incorrect.",
+    "entityType": "MESSAGE",
+    "created": "01/02/24 08:00 PM"
+  },
+  {
+    "id": "msg_45",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Customer Service",
+    "initials": "A",
+    "text": "I will notify you once we receive an update.",
+    "entityType": "MESSAGE",
+    "created": "01/02/24 09:00 PM"
+  },
+  {
+    "id": "msg_46",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "John Doe",
+    "initials": "J",
+    "text": "I need to cancel my order.",
+    "entityType": "MESSAGE",
+    "created": "01/02/24 10:00 PM"
+  },
+  {
+    "id": "msg_47",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Support",
+    "initials": "A",
+    "text": "I apologize for the inconvenience, we're working to resolve this.",
+    "entityType": "MESSAGE",
+    "created": "01/02/24 11:00 PM"
+  },
+  {
+    "id": "msg_48",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "John Doe",
+    "initials": "J",
+    "text": "How can I contact customer support?",
+    "entityType": "MESSAGE",
+    "created": "01/03/24 12:00 AM"
+  },
+  {
+    "id": "msg_49",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Support",
+    "initials": "A",
+    "text": "Is there anything else I can assist you with?",
+    "entityType": "MESSAGE",
+    "created": "01/03/24 01:00 AM"
+  },
+  {
+    "id": "msg_50",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "John Doe",
+    "initials": "J",
+    "text": "I need to cancel my order.",
+    "entityType": "MESSAGE",
+    "created": "01/03/24 02:00 AM"
+  },
+  {
+    "id": "msg_51",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Agent",
+    "initials": "A",
+    "text": "I will notify you once we receive an update.",
+    "entityType": "MESSAGE",
+    "created": "01/03/24 03:00 AM"
+  },
+  {
+    "id": "msg_52",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "Jane Smith",
+    "initials": "A",
+    "text": "My package was marked as delivered, but I didn't receive it.",
+    "entityType": "MESSAGE",
+    "created": "01/03/24 04:00 AM"
+  },
+  {
+    "id": "msg_53",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Agent",
+    "initials": "A",
+    "text": "Please provide more details so I can assist you better.",
+    "entityType": "MESSAGE",
+    "created": "01/03/24 05:00 AM"
+  },
+  {
+    "id": "msg_54",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "John Doe",
+    "initials": "X",
+    "text": "Do you offer gift wrapping services?",
+    "entityType": "MESSAGE",
+    "created": "01/03/24 06:00 AM"
+  },
+  {
+    "id": "msg_55",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Customer Service",
+    "initials": "A",
+    "text": "I will notify you once we receive an update.",
+    "entityType": "MESSAGE",
+    "created": "01/03/24 07:00 AM"
+  },
+  {
+    "id": "msg_56",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "Alex Johnson",
+    "initials": "X",
+    "text": "The item arrived damaged.",
+    "entityType": "MESSAGE",
+    "created": "01/03/24 08:00 AM"
+  },
+  {
+    "id": "msg_57",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Customer Service",
+    "initials": "A",
+    "text": "Thank you for your patience.",
+    "entityType": "MESSAGE",
+    "created": "01/03/24 09:00 AM"
+  },
+  {
+    "id": "msg_58",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "John Doe",
+    "initials": "X",
+    "text": "Can I modify my order before it ships?",
+    "entityType": "MESSAGE",
+    "created": "01/03/24 10:00 AM"
+  },
+  {
+    "id": "msg_59",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Support",
+    "initials": "A",
+    "text": "I understand your concern, let me check that for you.",
+    "entityType": "MESSAGE",
+    "created": "01/03/24 11:00 AM"
+  },
+  {
+    "id": "msg_60",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "Jane Smith",
+    "initials": "A",
+    "text": "Can I get a refund?",
+    "entityType": "MESSAGE",
+    "created": "01/03/24 12:00 PM"
+  },
+  {
+    "id": "msg_61",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Agent",
+    "initials": "A",
+    "text": "We appreciate your feedback!",
+    "entityType": "MESSAGE",
+    "created": "01/03/24 01:00 PM"
+  },
+  {
+    "id": "msg_62",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "Jane Smith",
+    "initials": "X",
+    "text": "Can I schedule a delivery at a specific time?",
+    "entityType": "MESSAGE",
+    "created": "01/03/24 02:00 PM"
+  },
+  {
+    "id": "msg_63",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Agent",
+    "initials": "A",
+    "text": "How can I assist you today?",
+    "entityType": "MESSAGE",
+    "created": "01/03/24 03:00 PM"
+  },
+  {
+    "id": "msg_64",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "Jane Smith",
+    "initials": "J",
+    "text": "What is your refund policy?",
+    "entityType": "MESSAGE",
+    "created": "01/03/24 04:00 PM"
+  },
+  {
+    "id": "msg_65",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Customer Service",
+    "initials": "A",
+    "text": "I will send you an email confirmation shortly.",
+    "entityType": "MESSAGE",
+    "created": "01/03/24 05:00 PM"
+  },
+  {
+    "id": "msg_66",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "Alex Johnson",
+    "initials": "J",
+    "text": "Do you have this item in stock?",
+    "entityType": "MESSAGE",
+    "created": "01/03/24 06:00 PM"
+  },
+  {
+    "id": "msg_67",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Support",
+    "initials": "A",
+    "text": "Your issue has been resolved.",
+    "entityType": "MESSAGE",
+    "created": "01/03/24 07:00 PM"
+  },
+  {
+    "id": "msg_68",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "Jane Smith",
+    "initials": "X",
+    "text": "Can I change my delivery address?",
+    "entityType": "MESSAGE",
+    "created": "01/03/24 08:00 PM"
+  },
+  {
+    "id": "msg_69",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Support",
+    "initials": "A",
+    "text": "Please provide more details so I can assist you better.",
+    "entityType": "MESSAGE",
+    "created": "01/03/24 09:00 PM"
+  },
+  {
+    "id": "msg_70",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "John Doe",
+    "initials": "X",
+    "text": "My package was marked as delivered, but I didn't receive it.",
+    "entityType": "MESSAGE",
+    "created": "01/03/24 10:00 PM"
+  },
+  {
+    "id": "msg_71",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Support",
+    "initials": "A",
+    "text": "I have updated your details in our system.",
+    "entityType": "MESSAGE",
+    "created": "01/03/24 11:00 PM"
+  },
+  {
+    "id": "msg_72",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "Alex Johnson",
+    "initials": "A",
+    "text": "I have not received my package yet.",
+    "entityType": "MESSAGE",
+    "created": "01/04/24 12:00 AM"
+  },
+  {
+    "id": "msg_73",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Support",
+    "initials": "A",
+    "text": "You can track your order using the following link.",
+    "entityType": "MESSAGE",
+    "created": "01/04/24 01:00 AM"
+  },
+  {
+    "id": "msg_74",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "Jane Smith",
+    "initials": "X",
+    "text": "My package was marked as delivered, but I didn't receive it.",
+    "entityType": "MESSAGE",
+    "created": "01/04/24 02:00 AM"
+  },
+  {
+    "id": "msg_75",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Support",
+    "initials": "A",
+    "text": "Please share your order number for verification.",
+    "entityType": "MESSAGE",
+    "created": "01/04/24 03:00 AM"
+  },
+  {
+    "id": "msg_76",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "John Doe",
+    "initials": "J",
+    "text": "My order was incorrect.",
+    "entityType": "MESSAGE",
+    "created": "01/04/24 04:00 AM"
+  },
+  {
+    "id": "msg_77",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Agent",
+    "initials": "A",
+    "text": "We appreciate your feedback!",
+    "entityType": "MESSAGE",
+    "created": "01/04/24 05:00 AM"
+  },
+  {
+    "id": "msg_78",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "Jane Smith",
+    "initials": "A",
+    "text": "Can I schedule a delivery at a specific time?",
+    "entityType": "MESSAGE",
+    "created": "01/04/24 06:00 AM"
+  },
+  {
+    "id": "msg_79",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Support",
+    "initials": "A",
+    "text": "Thank you for your patience.",
+    "entityType": "MESSAGE",
+    "created": "01/04/24 07:00 AM"
+  },
+  {
+    "id": "msg_80",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "John Doe",
+    "initials": "A",
+    "text": "Hi, I need help with my order.",
+    "entityType": "MESSAGE",
+    "created": "01/04/24 08:00 AM"
+  },
+  {
+    "id": "msg_81",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Support",
+    "initials": "A",
+    "text": "I'm checking the details now, one moment please.",
+    "entityType": "MESSAGE",
+    "created": "01/04/24 09:00 AM"
+  },
+  {
+    "id": "msg_82",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "John Doe",
+    "initials": "J",
+    "text": "Can I change my delivery address?",
+    "entityType": "MESSAGE",
+    "created": "01/04/24 10:00 AM"
+  },
+  {
+    "id": "msg_83",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Agent",
+    "initials": "A",
+    "text": "Please provide more details so I can assist you better.",
+    "entityType": "MESSAGE",
+    "created": "01/04/24 11:00 AM"
+  },
+  {
+    "id": "msg_84",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "Jane Smith",
+    "initials": "X",
+    "text": "Hi, I need help with my order.",
+    "entityType": "MESSAGE",
+    "created": "01/04/24 12:00 PM"
+  },
+  {
+    "id": "msg_85",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Customer Service",
+    "initials": "A",
+    "text": "I understand your concern, let me check that for you.",
+    "entityType": "MESSAGE",
+    "created": "01/04/24 01:00 PM"
+  },
+  {
+    "id": "msg_86",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "Jane Smith",
+    "initials": "X",
+    "text": "What is your refund policy?",
+    "entityType": "MESSAGE",
+    "created": "01/04/24 02:00 PM"
+  },
+  {
+    "id": "msg_87",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Support",
+    "initials": "A",
+    "text": "How can I assist you today?",
+    "entityType": "MESSAGE",
+    "created": "01/04/24 03:00 PM"
+  },
+  {
+    "id": "msg_88",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "John Doe",
+    "initials": "X",
+    "text": "The live chat is not working.",
+    "entityType": "MESSAGE",
+    "created": "01/04/24 04:00 PM"
+  },
+  {
+    "id": "msg_89",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Agent",
+    "initials": "A",
+    "text": "I'm checking the details now, one moment please.",
+    "entityType": "MESSAGE",
+    "created": "01/04/24 05:00 PM"
+  },
+  {
+    "id": "msg_90",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "Alex Johnson",
+    "initials": "A",
+    "text": "When will my package arrive?",
+    "entityType": "MESSAGE",
+    "created": "01/04/24 06:00 PM"
+  },
+  {
+    "id": "msg_91",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Customer Service",
+    "initials": "A",
+    "text": "Your refund request has been initiated.",
+    "entityType": "MESSAGE",
+    "created": "01/04/24 07:00 PM"
+  },
+  {
+    "id": "msg_92",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "Alex Johnson",
+    "initials": "X",
+    "text": "The tracking number is not updating.",
+    "entityType": "MESSAGE",
+    "created": "01/04/24 08:00 PM"
+  },
+  {
+    "id": "msg_93",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Customer Service",
+    "initials": "A",
+    "text": "Your refund request has been initiated.",
+    "entityType": "MESSAGE",
+    "created": "01/04/24 09:00 PM"
+  },
+  {
+    "id": "msg_94",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "Alex Johnson",
+    "initials": "J",
+    "text": "My package was marked as delivered, but I didn't receive it.",
+    "entityType": "MESSAGE",
+    "created": "01/04/24 10:00 PM"
+  },
+  {
+    "id": "msg_95",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Support",
+    "initials": "A",
+    "text": "We appreciate your feedback!",
+    "entityType": "MESSAGE",
+    "created": "01/04/24 11:00 PM"
+  },
+  {
+    "id": "msg_96",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "John Doe",
+    "initials": "J",
+    "text": "I need to cancel my order.",
+    "entityType": "MESSAGE",
+    "created": "01/05/24 12:00 AM"
+  },
+  {
+    "id": "msg_97",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Agent",
+    "initials": "A",
+    "text": "Your request has been processed successfully.",
+    "entityType": "MESSAGE",
+    "created": "01/05/24 01:00 AM"
+  },
+  {
+    "id": "msg_98",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "John Doe",
+    "initials": "J",
+    "text": "I have not received my package yet.",
+    "entityType": "MESSAGE",
+    "created": "01/05/24 02:00 AM"
+  },
+  {
+    "id": "msg_99",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Customer Service",
+    "initials": "A",
+    "text": "I have updated your details in our system.",
+    "entityType": "MESSAGE",
+    "created": "01/05/24 03:00 AM"
+  },
+  {
+    "id": "msg_100",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "Jane Smith",
+    "initials": "J",
+    "text": "My order was incorrect.",
+    "entityType": "MESSAGE",
+    "created": "01/05/24 04:00 AM"
+  },
+  {
+    "id": "msg_101",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Support",
+    "initials": "A",
+    "text": "We appreciate your feedback!",
+    "entityType": "MESSAGE",
+    "created": "01/05/24 05:00 AM"
+  },
+  {
+    "id": "msg_102",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "John Doe",
+    "initials": "X",
+    "text": "Do you offer gift wrapping services?",
+    "entityType": "MESSAGE",
+    "created": "01/05/24 06:00 AM"
+  },
+  {
+    "id": "msg_103",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Customer Service",
+    "initials": "A",
+    "text": "Thank you for your patience.",
+    "entityType": "MESSAGE",
+    "created": "01/05/24 07:00 AM"
+  },
+  {
+    "id": "msg_104",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "Jane Smith",
+    "initials": "A",
+    "text": "My order was incorrect.",
+    "entityType": "MESSAGE",
+    "created": "01/05/24 08:00 AM"
+  },
+  {
+    "id": "msg_105",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Support",
+    "initials": "A",
+    "text": "I will notify you once we receive an update.",
+    "entityType": "MESSAGE",
+    "created": "01/05/24 09:00 AM"
+  },
+  {
+    "id": "msg_106",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "Jane Smith",
+    "initials": "J",
+    "text": "The live chat is not working.",
+    "entityType": "MESSAGE",
+    "created": "01/05/24 10:00 AM"
+  },
+  {
+    "id": "msg_107",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Support",
+    "initials": "A",
+    "text": "I will notify you once we receive an update.",
+    "entityType": "MESSAGE",
+    "created": "01/05/24 11:00 AM"
+  },
+  {
+    "id": "msg_108",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "Alex Johnson",
+    "initials": "X",
+    "text": "How do I return an item?",
+    "entityType": "MESSAGE",
+    "created": "01/05/24 12:00 PM"
+  },
+  {
+    "id": "msg_109",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Support",
+    "initials": "A",
+    "text": "Your request has been processed successfully.",
+    "entityType": "MESSAGE",
+    "created": "01/05/24 01:00 PM"
+  },
+  {
+    "id": "msg_110",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "John Doe",
+    "initials": "A",
+    "text": "When will my package arrive?",
+    "entityType": "MESSAGE",
+    "created": "01/05/24 02:00 PM"
+  },
+  {
+    "id": "msg_111",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Agent",
+    "initials": "A",
+    "text": "I understand your concern, let me check that for you.",
+    "entityType": "MESSAGE",
+    "created": "01/05/24 03:00 PM"
+  },
+  {
+    "id": "msg_112",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "John Doe",
+    "initials": "X",
+    "text": "Can I get a refund?",
+    "entityType": "MESSAGE",
+    "created": "01/05/24 04:00 PM"
+  },
+  {
+    "id": "msg_113",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Agent",
+    "initials": "A",
+    "text": "Your refund request has been initiated.",
+    "entityType": "MESSAGE",
+    "created": "01/05/24 05:00 PM"
+  },
+  {
+    "id": "msg_114",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "Alex Johnson",
+    "initials": "J",
+    "text": "I am experiencing an issue with the website.",
+    "entityType": "MESSAGE",
+    "created": "01/05/24 06:00 PM"
+  },
+  {
+    "id": "msg_115",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Support",
+    "initials": "A",
+    "text": "I apologize for the inconvenience, we're working to resolve this.",
+    "entityType": "MESSAGE",
+    "created": "01/05/24 07:00 PM"
+  },
+  {
+    "id": "msg_116",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "Jane Smith",
+    "initials": "X",
+    "text": "I need to cancel my order.",
+    "entityType": "MESSAGE",
+    "created": "01/05/24 08:00 PM"
+  },
+  {
+    "id": "msg_117",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Support",
+    "initials": "A",
+    "text": "I will send you an email confirmation shortly.",
+    "entityType": "MESSAGE",
+    "created": "01/05/24 09:00 PM"
+  },
+  {
+    "id": "msg_118",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "John Doe",
+    "initials": "A",
+    "text": "Do you have this item in stock?",
+    "entityType": "MESSAGE",
+    "created": "01/05/24 10:00 PM"
+  },
+  {
+    "id": "msg_119",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Agent",
+    "initials": "A",
+    "text": "Thank you for your patience.",
+    "entityType": "MESSAGE",
+    "created": "01/05/24 11:00 PM"
+  },
+  {
+    "id": "msg_120",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "Alex Johnson",
+    "initials": "A",
+    "text": "I am experiencing an issue with the website.",
+    "entityType": "MESSAGE",
+    "created": "01/06/24 12:00 AM"
+  },
+  {
+    "id": "msg_121",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Support",
+    "initials": "A",
+    "text": "Please share your order number for verification.",
+    "entityType": "MESSAGE",
+    "created": "01/06/24 01:00 AM"
+  },
+  {
+    "id": "msg_122",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "John Doe",
+    "initials": "J",
+    "text": "Do you offer gift wrapping services?",
+    "entityType": "MESSAGE",
+    "created": "01/06/24 02:00 AM"
+  },
+  {
+    "id": "msg_123",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Customer Service",
+    "initials": "A",
+    "text": "Thank you for your patience.",
+    "entityType": "MESSAGE",
+    "created": "01/06/24 03:00 AM"
+  },
+  {
+    "id": "msg_124",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "John Doe",
+    "initials": "A",
+    "text": "My order was incorrect.",
+    "entityType": "MESSAGE",
+    "created": "01/06/24 04:00 AM"
+  },
+  {
+    "id": "msg_125",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Agent",
+    "initials": "A",
+    "text": "I will escalate this to the relevant team.",
+    "entityType": "MESSAGE",
+    "created": "01/06/24 05:00 AM"
+  },
+  {
+    "id": "msg_126",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "Alex Johnson",
+    "initials": "A",
+    "text": "I have not received my package yet.",
+    "entityType": "MESSAGE",
+    "created": "01/06/24 06:00 AM"
+  },
+  {
+    "id": "msg_127",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Support",
+    "initials": "A",
+    "text": "We appreciate your feedback!",
+    "entityType": "MESSAGE",
+    "created": "01/06/24 07:00 AM"
+  },
+  {
+    "id": "msg_128",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "Alex Johnson",
+    "initials": "X",
+    "text": "Do you offer gift wrapping services?",
+    "entityType": "MESSAGE",
+    "created": "01/06/24 08:00 AM"
+  },
+  {
+    "id": "msg_129",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Customer Service",
+    "initials": "A",
+    "text": "You can track your order using the following link.",
+    "entityType": "MESSAGE",
+    "created": "01/06/24 09:00 AM"
+  },
+  {
+    "id": "msg_130",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "Alex Johnson",
+    "initials": "A",
+    "text": "Can I get a refund?",
+    "entityType": "MESSAGE",
+    "created": "01/06/24 10:00 AM"
+  },
+  {
+    "id": "msg_131",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Agent",
+    "initials": "A",
+    "text": "I will escalate this to the relevant team.",
+    "entityType": "MESSAGE",
+    "created": "01/06/24 11:00 AM"
+  },
+  {
+    "id": "msg_132",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "Jane Smith",
+    "initials": "X",
+    "text": "Do you offer gift wrapping services?",
+    "entityType": "MESSAGE",
+    "created": "01/06/24 12:00 PM"
+  },
+  {
+    "id": "msg_133",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Support",
+    "initials": "A",
+    "text": "I will send you an email confirmation shortly.",
+    "entityType": "MESSAGE",
+    "created": "01/06/24 01:00 PM"
+  },
+  {
+    "id": "msg_134",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "Alex Johnson",
+    "initials": "J",
+    "text": "I need to cancel my order.",
+    "entityType": "MESSAGE",
+    "created": "01/06/24 02:00 PM"
+  },
+  {
+    "id": "msg_135",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Agent",
+    "initials": "A",
+    "text": "Thank you for your patience.",
+    "entityType": "MESSAGE",
+    "created": "01/06/24 03:00 PM"
+  },
+  {
+    "id": "msg_136",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "John Doe",
+    "initials": "A",
+    "text": "The live chat is not working.",
+    "entityType": "MESSAGE",
+    "created": "01/06/24 04:00 PM"
+  },
+  {
+    "id": "msg_137",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Customer Service",
+    "initials": "A",
+    "text": "I have updated your details in our system.",
+    "entityType": "MESSAGE",
+    "created": "01/06/24 05:00 PM"
+  },
+  {
+    "id": "msg_138",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "John Doe",
+    "initials": "A",
+    "text": "The live chat is not working.",
+    "entityType": "MESSAGE",
+    "created": "01/06/24 06:00 PM"
+  },
+  {
+    "id": "msg_139",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Agent",
+    "initials": "A",
+    "text": "Your refund request has been initiated.",
+    "entityType": "MESSAGE",
+    "created": "01/06/24 07:00 PM"
+  },
+  {
+    "id": "msg_140",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "John Doe",
+    "initials": "J",
+    "text": "What is your refund policy?",
+    "entityType": "MESSAGE",
+    "created": "01/06/24 08:00 PM"
+  },
+  {
+    "id": "msg_141",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Support",
+    "initials": "A",
+    "text": "Please share your order number for verification.",
+    "entityType": "MESSAGE",
+    "created": "01/06/24 09:00 PM"
+  },
+  {
+    "id": "msg_142",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "John Doe",
+    "initials": "J",
+    "text": "Can I schedule a delivery at a specific time?",
+    "entityType": "MESSAGE",
+    "created": "01/06/24 10:00 PM"
+  },
+  {
+    "id": "msg_143",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Support",
+    "initials": "A",
+    "text": "Our team will look into this and get back to you shortly.",
+    "entityType": "MESSAGE",
+    "created": "01/06/24 11:00 PM"
+  },
+  {
+    "id": "msg_144",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "John Doe",
+    "initials": "A",
+    "text": "Do you offer gift wrapping services?",
+    "entityType": "MESSAGE",
+    "created": "01/07/24 12:00 AM"
+  },
+  {
+    "id": "msg_145",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Customer Service",
+    "initials": "A",
+    "text": "I will escalate this to the relevant team.",
+    "entityType": "MESSAGE",
+    "created": "01/07/24 01:00 AM"
+  },
+  {
+    "id": "msg_146",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "Jane Smith",
+    "initials": "J",
+    "text": "Can I get a refund?",
+    "entityType": "MESSAGE",
+    "created": "01/07/24 02:00 AM"
+  },
+  {
+    "id": "msg_147",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Support",
+    "initials": "A",
+    "text": "Is there anything else I can assist you with?",
+    "entityType": "MESSAGE",
+    "created": "01/07/24 03:00 AM"
+  },
+  {
+    "id": "msg_148",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "John Doe",
+    "initials": "X",
+    "text": "Can I get a refund?",
+    "entityType": "MESSAGE",
+    "created": "01/07/24 04:00 AM"
+  },
+  {
+    "id": "msg_149",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Agent",
+    "initials": "A",
+    "text": "Thank you for your patience.",
+    "entityType": "MESSAGE",
+    "created": "01/07/24 05:00 AM"
+  },
+  {
+    "id": "msg_150",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "Jane Smith",
+    "initials": "A",
+    "text": "Hi, I need help with my order.",
+    "entityType": "MESSAGE",
+    "created": "01/07/24 06:00 AM"
+  },
+  {
+    "id": "msg_151",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Agent",
+    "initials": "A",
+    "text": "Your refund request has been initiated.",
+    "entityType": "MESSAGE",
+    "created": "01/07/24 07:00 AM"
+  },
+  {
+    "id": "msg_152",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "Alex Johnson",
+    "initials": "X",
+    "text": "Do you have this item in stock?",
+    "entityType": "MESSAGE",
+    "created": "01/07/24 08:00 AM"
+  },
+  {
+    "id": "msg_153",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Agent",
+    "initials": "A",
+    "text": "I will notify you once we receive an update.",
+    "entityType": "MESSAGE",
+    "created": "01/07/24 09:00 AM"
+  },
+  {
+    "id": "msg_154",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "John Doe",
+    "initials": "X",
+    "text": "My order was incorrect.",
+    "entityType": "MESSAGE",
+    "created": "01/07/24 10:00 AM"
+  },
+  {
+    "id": "msg_155",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Support",
+    "initials": "A",
+    "text": "How can I assist you today?",
+    "entityType": "MESSAGE",
+    "created": "01/07/24 11:00 AM"
+  },
+  {
+    "id": "msg_156",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "Alex Johnson",
+    "initials": "J",
+    "text": "How do I return an item?",
+    "entityType": "MESSAGE",
+    "created": "01/07/24 12:00 PM"
+  },
+  {
+    "id": "msg_157",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Support",
+    "initials": "A",
+    "text": "Please share your order number for verification.",
+    "entityType": "MESSAGE",
+    "created": "01/07/24 01:00 PM"
+  },
+  {
+    "id": "msg_158",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "John Doe",
+    "initials": "A",
+    "text": "I have not received my package yet.",
+    "entityType": "MESSAGE",
+    "created": "01/07/24 02:00 PM"
+  },
+  {
+    "id": "msg_159",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Customer Service",
+    "initials": "A",
+    "text": "Your issue has been resolved.",
+    "entityType": "MESSAGE",
+    "created": "01/07/24 03:00 PM"
+  },
+  {
+    "id": "msg_160",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "Alex Johnson",
+    "initials": "X",
+    "text": "The item arrived damaged.",
+    "entityType": "MESSAGE",
+    "created": "01/07/24 04:00 PM"
+  },
+  {
+    "id": "msg_161",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Support",
+    "initials": "A",
+    "text": "I have updated your details in our system.",
+    "entityType": "MESSAGE",
+    "created": "01/07/24 05:00 PM"
+  },
+  {
+    "id": "msg_162",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "Jane Smith",
+    "initials": "X",
+    "text": "The item arrived damaged.",
+    "entityType": "MESSAGE",
+    "created": "01/07/24 06:00 PM"
+  },
+  {
+    "id": "msg_163",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Support",
+    "initials": "A",
+    "text": "I will send you an email confirmation shortly.",
+    "entityType": "MESSAGE",
+    "created": "01/07/24 07:00 PM"
+  },
+  {
+    "id": "msg_164",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "Jane Smith",
+    "initials": "J",
+    "text": "Can I schedule a delivery at a specific time?",
+    "entityType": "MESSAGE",
+    "created": "01/07/24 08:00 PM"
+  },
+  {
+    "id": "msg_165",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Agent",
+    "initials": "A",
+    "text": "Is there anything else I can assist you with?",
+    "entityType": "MESSAGE",
+    "created": "01/07/24 09:00 PM"
+  },
+  {
+    "id": "msg_166",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "John Doe",
+    "initials": "X",
+    "text": "Do you offer gift wrapping services?",
+    "entityType": "MESSAGE",
+    "created": "01/07/24 10:00 PM"
+  },
+  {
+    "id": "msg_167",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Customer Service",
+    "initials": "A",
+    "text": "I will send you an email confirmation shortly.",
+    "entityType": "MESSAGE",
+    "created": "01/07/24 11:00 PM"
+  },
+  {
+    "id": "msg_168",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "Jane Smith",
+    "initials": "A",
+    "text": "How do I return an item?",
+    "entityType": "MESSAGE",
+    "created": "01/08/24 12:00 AM"
+  },
+  {
+    "id": "msg_169",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Customer Service",
+    "initials": "A",
+    "text": "I will notify you once we receive an update.",
+    "entityType": "MESSAGE",
+    "created": "01/08/24 01:00 AM"
+  },
+  {
+    "id": "msg_170",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "Jane Smith",
+    "initials": "X",
+    "text": "Can I get a refund?",
+    "entityType": "MESSAGE",
+    "created": "01/08/24 02:00 AM"
+  },
+  {
+    "id": "msg_171",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Support",
+    "initials": "A",
+    "text": "Your issue has been resolved.",
+    "entityType": "MESSAGE",
+    "created": "01/08/24 03:00 AM"
+  },
+  {
+    "id": "msg_172",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "John Doe",
+    "initials": "J",
+    "text": "When will my package arrive?",
+    "entityType": "MESSAGE",
+    "created": "01/08/24 04:00 AM"
+  },
+  {
+    "id": "msg_173",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Support",
+    "initials": "A",
+    "text": "I apologize for the inconvenience, we're working to resolve this.",
+    "entityType": "MESSAGE",
+    "created": "01/08/24 05:00 AM"
+  },
+  {
+    "id": "msg_174",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "Jane Smith",
+    "initials": "A",
+    "text": "Can I modify my order before it ships?",
+    "entityType": "MESSAGE",
+    "created": "01/08/24 06:00 AM"
+  },
+  {
+    "id": "msg_175",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Agent",
+    "initials": "A",
+    "text": "Your request has been processed successfully.",
+    "entityType": "MESSAGE",
+    "created": "01/08/24 07:00 AM"
+  },
+  {
+    "id": "msg_176",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "Jane Smith",
+    "initials": "X",
+    "text": "Hi, I need help with my order.",
+    "entityType": "MESSAGE",
+    "created": "01/08/24 08:00 AM"
+  },
+  {
+    "id": "msg_177",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Agent",
+    "initials": "A",
+    "text": "I apologize for the inconvenience, we're working to resolve this.",
+    "entityType": "MESSAGE",
+    "created": "01/08/24 09:00 AM"
+  },
+  {
+    "id": "msg_178",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "Alex Johnson",
+    "initials": "J",
+    "text": "The tracking number is not updating.",
+    "entityType": "MESSAGE",
+    "created": "01/08/24 10:00 AM"
+  },
+  {
+    "id": "msg_179",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Customer Service",
+    "initials": "A",
+    "text": "I have updated your details in our system.",
+    "entityType": "MESSAGE",
+    "created": "01/08/24 11:00 AM"
+  },
+  {
+    "id": "msg_180",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "Alex Johnson",
+    "initials": "J",
+    "text": "Can I get a refund?",
+    "entityType": "MESSAGE",
+    "created": "01/08/24 12:00 PM"
+  },
+  {
+    "id": "msg_181",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Customer Service",
+    "initials": "A",
+    "text": "Your refund request has been initiated.",
+    "entityType": "MESSAGE",
+    "created": "01/08/24 01:00 PM"
+  },
+  {
+    "id": "msg_182",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "Alex Johnson",
+    "initials": "X",
+    "text": "How can I contact customer support?",
+    "entityType": "MESSAGE",
+    "created": "01/08/24 02:00 PM"
+  },
+  {
+    "id": "msg_183",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Customer Service",
+    "initials": "A",
+    "text": "You can track your order using the following link.",
+    "entityType": "MESSAGE",
+    "created": "01/08/24 03:00 PM"
+  },
+  {
+    "id": "msg_184",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "Jane Smith",
+    "initials": "X",
+    "text": "My package was marked as delivered, but I didn't receive it.",
+    "entityType": "MESSAGE",
+    "created": "01/08/24 04:00 PM"
+  },
+  {
+    "id": "msg_185",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Customer Service",
+    "initials": "A",
+    "text": "Let us know if you need further assistance.",
+    "entityType": "MESSAGE",
+    "created": "01/08/24 05:00 PM"
+  },
+  {
+    "id": "msg_186",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "Jane Smith",
+    "initials": "A",
+    "text": "The tracking number is not updating.",
+    "entityType": "MESSAGE",
+    "created": "01/08/24 06:00 PM"
+  },
+  {
+    "id": "msg_187",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Customer Service",
+    "initials": "A",
+    "text": "Our team will look into this and get back to you shortly.",
+    "entityType": "MESSAGE",
+    "created": "01/08/24 07:00 PM"
+  },
+  {
+    "id": "msg_188",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "John Doe",
+    "initials": "J",
+    "text": "How do I return an item?",
+    "entityType": "MESSAGE",
+    "created": "01/08/24 08:00 PM"
+  },
+  {
+    "id": "msg_189",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Agent",
+    "initials": "A",
+    "text": "I will escalate this to the relevant team.",
+    "entityType": "MESSAGE",
+    "created": "01/08/24 09:00 PM"
+  },
+  {
+    "id": "msg_190",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "Jane Smith",
+    "initials": "A",
+    "text": "My package was marked as delivered, but I didn't receive it.",
+    "entityType": "MESSAGE",
+    "created": "01/08/24 10:00 PM"
+  },
+  {
+    "id": "msg_191",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Customer Service",
+    "initials": "A",
+    "text": "I understand your concern, let me check that for you.",
+    "entityType": "MESSAGE",
+    "created": "01/08/24 11:00 PM"
+  },
+  {
+    "id": "msg_192",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "Alex Johnson",
+    "initials": "J",
+    "text": "My package was marked as delivered, but I didn't receive it.",
+    "entityType": "MESSAGE",
+    "created": "01/09/24 12:00 AM"
+  },
+  {
+    "id": "msg_193",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Support",
+    "initials": "A",
+    "text": "I apologize for the inconvenience, we're working to resolve this.",
+    "entityType": "MESSAGE",
+    "created": "01/09/24 01:00 AM"
+  },
+  {
+    "id": "msg_194",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "Alex Johnson",
+    "initials": "J",
+    "text": "The tracking number is not updating.",
+    "entityType": "MESSAGE",
+    "created": "01/09/24 02:00 AM"
+  },
+  {
+    "id": "msg_195",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Customer Service",
+    "initials": "A",
+    "text": "Our team will look into this and get back to you shortly.",
+    "entityType": "MESSAGE",
+    "created": "01/09/24 03:00 AM"
+  },
+  {
+    "id": "msg_196",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "Alex Johnson",
+    "initials": "X",
+    "text": "How do I return an item?",
+    "entityType": "MESSAGE",
+    "created": "01/09/24 04:00 AM"
+  },
+  {
+    "id": "msg_197",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Support",
+    "initials": "A",
+    "text": "I will send you an email confirmation shortly.",
+    "entityType": "MESSAGE",
+    "created": "01/09/24 05:00 AM"
+  },
+  {
+    "id": "msg_198",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "John Doe",
+    "initials": "X",
+    "text": "Do you have this item in stock?",
+    "entityType": "MESSAGE",
+    "created": "01/09/24 06:00 AM"
+  },
+  {
+    "id": "msg_199",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Agent",
+    "initials": "A",
+    "text": "I have updated your details in our system.",
+    "entityType": "MESSAGE",
+    "created": "01/09/24 07:00 AM"
+  },
+  {
+    "id": "msg_200",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "Alex Johnson",
+    "initials": "A",
+    "text": "Can I schedule a delivery at a specific time?",
+    "entityType": "MESSAGE",
+    "created": "01/09/24 08:00 AM"
+  },
+  {
+    "id": "msg_201",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Customer Service",
+    "initials": "A",
+    "text": "I'm checking the details now, one moment please.",
+    "entityType": "MESSAGE",
+    "created": "01/09/24 09:00 AM"
+  },
+  {
+    "id": "msg_202",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "John Doe",
+    "initials": "J",
+    "text": "How can I contact customer support?",
+    "entityType": "MESSAGE",
+    "created": "01/09/24 10:00 AM"
+  },
+  {
+    "id": "msg_203",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Customer Service",
+    "initials": "A",
+    "text": "How can I assist you today?",
+    "entityType": "MESSAGE",
+    "created": "01/09/24 11:00 AM"
+  },
+  {
+    "id": "msg_204",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "John Doe",
+    "initials": "J",
+    "text": "Do you have this item in stock?",
+    "entityType": "MESSAGE",
+    "created": "01/09/24 12:00 PM"
+  },
+  {
+    "id": "msg_205",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Customer Service",
+    "initials": "A",
+    "text": "You can track your order using the following link.",
+    "entityType": "MESSAGE",
+    "created": "01/09/24 01:00 PM"
+  },
+  {
+    "id": "msg_206",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "Alex Johnson",
+    "initials": "X",
+    "text": "The item arrived damaged.",
+    "entityType": "MESSAGE",
+    "created": "01/09/24 02:00 PM"
+  },
+  {
+    "id": "msg_207",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Agent",
+    "initials": "A",
+    "text": "We are sorry for the delay, let me check with our delivery team.",
+    "entityType": "MESSAGE",
+    "created": "01/09/24 03:00 PM"
+  },
+  {
+    "id": "msg_208",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "Jane Smith",
+    "initials": "J",
+    "text": "The item arrived damaged.",
+    "entityType": "MESSAGE",
+    "created": "01/09/24 04:00 PM"
+  },
+  {
+    "id": "msg_209",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Agent",
+    "initials": "A",
+    "text": "I understand your concern, let me check that for you.",
+    "entityType": "MESSAGE",
+    "created": "01/09/24 05:00 PM"
+  },
+  {
+    "id": "msg_210",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "Jane Smith",
+    "initials": "J",
+    "text": "How do I return an item?",
+    "entityType": "MESSAGE",
+    "created": "01/09/24 06:00 PM"
+  },
+  {
+    "id": "msg_211",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Support",
+    "initials": "A",
+    "text": "Please share your order number for verification.",
+    "entityType": "MESSAGE",
+    "created": "01/09/24 07:00 PM"
+  },
+  {
+    "id": "msg_212",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "John Doe",
+    "initials": "J",
+    "text": "Can I change my delivery address?",
+    "entityType": "MESSAGE",
+    "created": "01/09/24 08:00 PM"
+  },
+  {
+    "id": "msg_213",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Customer Service",
+    "initials": "A",
+    "text": "Your refund request has been initiated.",
+    "entityType": "MESSAGE",
+    "created": "01/09/24 09:00 PM"
+  },
+  {
+    "id": "msg_214",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "Alex Johnson",
+    "initials": "A",
+    "text": "The live chat is not working.",
+    "entityType": "MESSAGE",
+    "created": "01/09/24 10:00 PM"
+  },
+  {
+    "id": "msg_215",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Agent",
+    "initials": "A",
+    "text": "Our team will look into this and get back to you shortly.",
+    "entityType": "MESSAGE",
+    "created": "01/09/24 11:00 PM"
+  },
+  {
+    "id": "msg_216",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "John Doe",
+    "initials": "J",
+    "text": "The live chat is not working.",
+    "entityType": "MESSAGE",
+    "created": "01/10/24 12:00 AM"
+  },
+  {
+    "id": "msg_217",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Customer Service",
+    "initials": "A",
+    "text": "I apologize for the inconvenience, we're working to resolve this.",
+    "entityType": "MESSAGE",
+    "created": "01/10/24 01:00 AM"
+  },
+  {
+    "id": "msg_218",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "Alex Johnson",
+    "initials": "A",
+    "text": "My package was marked as delivered, but I didn't receive it.",
+    "entityType": "MESSAGE",
+    "created": "01/10/24 02:00 AM"
+  },
+  {
+    "id": "msg_219",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Support",
+    "initials": "A",
+    "text": "Thank you for your patience.",
+    "entityType": "MESSAGE",
+    "created": "01/10/24 03:00 AM"
+  },
+  {
+    "id": "msg_220",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "Alex Johnson",
+    "initials": "J",
+    "text": "My order was incorrect.",
+    "entityType": "MESSAGE",
+    "created": "01/10/24 04:00 AM"
+  },
+  {
+    "id": "msg_221",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Agent",
+    "initials": "A",
+    "text": "Is there anything else I can assist you with?",
+    "entityType": "MESSAGE",
+    "created": "01/10/24 05:00 AM"
+  },
+  {
+    "id": "msg_222",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "Jane Smith",
+    "initials": "X",
+    "text": "My order was incorrect.",
+    "entityType": "MESSAGE",
+    "created": "01/10/24 06:00 AM"
+  },
+  {
+    "id": "msg_223",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Agent",
+    "initials": "A",
+    "text": "I'm checking the details now, one moment please.",
+    "entityType": "MESSAGE",
+    "created": "01/10/24 07:00 AM"
+  },
+  {
+    "id": "msg_224",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "Jane Smith",
+    "initials": "J",
+    "text": "I need to cancel my order.",
+    "entityType": "MESSAGE",
+    "created": "01/10/24 08:00 AM"
+  },
+  {
+    "id": "msg_225",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Customer Service",
+    "initials": "A",
+    "text": "I will notify you once we receive an update.",
+    "entityType": "MESSAGE",
+    "created": "01/10/24 09:00 AM"
+  },
+  {
+    "id": "msg_226",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "Alex Johnson",
+    "initials": "A",
+    "text": "My package was marked as delivered, but I didn't receive it.",
+    "entityType": "MESSAGE",
+    "created": "01/10/24 10:00 AM"
+  },
+  {
+    "id": "msg_227",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Customer Service",
+    "initials": "A",
+    "text": "I will escalate this to the relevant team.",
+    "entityType": "MESSAGE",
+    "created": "01/10/24 11:00 AM"
+  },
+  {
+    "id": "msg_228",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "Jane Smith",
+    "initials": "X",
+    "text": "Can I change my delivery address?",
+    "entityType": "MESSAGE",
+    "created": "01/10/24 12:00 PM"
+  },
+  {
+    "id": "msg_229",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Customer Service",
+    "initials": "A",
+    "text": "Your issue has been resolved.",
+    "entityType": "MESSAGE",
+    "created": "01/10/24 01:00 PM"
+  },
+  {
+    "id": "msg_230",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "John Doe",
+    "initials": "A",
+    "text": "Can I schedule a delivery at a specific time?",
+    "entityType": "MESSAGE",
+    "created": "01/10/24 02:00 PM"
+  },
+  {
+    "id": "msg_231",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Support",
+    "initials": "A",
+    "text": "Our team will look into this and get back to you shortly.",
+    "entityType": "MESSAGE",
+    "created": "01/10/24 03:00 PM"
+  },
+  {
+    "id": "msg_232",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "Jane Smith",
+    "initials": "A",
+    "text": "How can I contact customer support?",
+    "entityType": "MESSAGE",
+    "created": "01/10/24 04:00 PM"
+  },
+  {
+    "id": "msg_233",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Customer Service",
+    "initials": "A",
+    "text": "Thank you for your patience.",
+    "entityType": "MESSAGE",
+    "created": "01/10/24 05:00 PM"
+  },
+  {
+    "id": "msg_234",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "Jane Smith",
+    "initials": "A",
+    "text": "How do I return an item?",
+    "entityType": "MESSAGE",
+    "created": "01/10/24 06:00 PM"
+  },
+  {
+    "id": "msg_235",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Agent",
+    "initials": "A",
+    "text": "I have updated your details in our system.",
+    "entityType": "MESSAGE",
+    "created": "01/10/24 07:00 PM"
+  },
+  {
+    "id": "msg_236",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "Jane Smith",
+    "initials": "A",
+    "text": "The live chat is not working.",
+    "entityType": "MESSAGE",
+    "created": "01/10/24 08:00 PM"
+  },
+  {
+    "id": "msg_237",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Agent",
+    "initials": "A",
+    "text": "Please provide more details so I can assist you better.",
+    "entityType": "MESSAGE",
+    "created": "01/10/24 09:00 PM"
+  },
+  {
+    "id": "msg_238",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "John Doe",
+    "initials": "X",
+    "text": "Do you have this item in stock?",
+    "entityType": "MESSAGE",
+    "created": "01/10/24 10:00 PM"
+  },
+  {
+    "id": "msg_239",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Customer Service",
+    "initials": "A",
+    "text": "Is there anything else I can assist you with?",
+    "entityType": "MESSAGE",
+    "created": "01/10/24 11:00 PM"
+  },
+  {
+    "id": "msg_240",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "John Doe",
+    "initials": "X",
+    "text": "When will my package arrive?",
+    "entityType": "MESSAGE",
+    "created": "01/11/24 12:00 AM"
+  },
+  {
+    "id": "msg_241",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Agent",
+    "initials": "A",
+    "text": "I will send you an email confirmation shortly.",
+    "entityType": "MESSAGE",
+    "created": "01/11/24 01:00 AM"
+  },
+  {
+    "id": "msg_242",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "John Doe",
+    "initials": "A",
+    "text": "How can I contact customer support?",
+    "entityType": "MESSAGE",
+    "created": "01/11/24 02:00 AM"
+  },
+  {
+    "id": "msg_243",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Customer Service",
+    "initials": "A",
+    "text": "Is there anything else I can assist you with?",
+    "entityType": "MESSAGE",
+    "created": "01/11/24 03:00 AM"
+  },
+  {
+    "id": "msg_244",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "John Doe",
+    "initials": "J",
+    "text": "Hi, I need help with my order.",
+    "entityType": "MESSAGE",
+    "created": "01/11/24 04:00 AM"
+  },
+  {
+    "id": "msg_245",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Customer Service",
+    "initials": "A",
+    "text": "We are sorry for the delay, let me check with our delivery team.",
+    "entityType": "MESSAGE",
+    "created": "01/11/24 05:00 AM"
+  },
+  {
+    "id": "msg_246",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "Jane Smith",
+    "initials": "J",
+    "text": "Can I modify my order before it ships?",
+    "entityType": "MESSAGE",
+    "created": "01/11/24 06:00 AM"
+  },
+  {
+    "id": "msg_247",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Agent",
+    "initials": "A",
+    "text": "Please provide more details so I can assist you better.",
+    "entityType": "MESSAGE",
+    "created": "01/11/24 07:00 AM"
+  },
+  {
+    "id": "msg_248",
+    "direction": "INCOMING",
+    "incoming": true,
+    "from": "Alex Johnson",
+    "initials": "X",
+    "text": "The item arrived damaged.",
+    "entityType": "MESSAGE",
+    "created": "01/11/24 08:00 AM"
+  },
+  {
+    "id": "msg_249",
+    "direction": "OUTGOING",
+    "incoming": false,
+    "from": "Customer Service",
+    "initials": "A",
+    "text": "I have updated your details in our system.",
+    "entityType": "MESSAGE",
+    "created": "01/11/24 09:00 AM"
+  }
+]

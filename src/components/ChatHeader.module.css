@@ -1,0 +1,46 @@
+.header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #d1d5db;
+}
+
+.info {
+  display: flex;
+  flex-grow: 1;
+  gap: 0.5rem;
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.25rem;
+  background-color: #16a34a;
+  color: #fff;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.25rem;
+}
+
+.name {
+  font-size: 1.25rem;
+  line-height: 1;
+  font-weight: 500;
+  color: #111827;
+}
+
+.hub {
+  font-size: 0.75rem;
+  line-height: 1;
+  color: #6b7280;
+}

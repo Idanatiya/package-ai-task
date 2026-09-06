@@ -1,0 +1,109 @@
+.message {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.outgoing {
+  flex-direction: row-reverse;
+}
+
+.avatar {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 9999px;
+  color: #fff;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.avatarIncoming {
+  background-color: #16a34a;
+}
+
+.avatarOutgoing {
+  background-color: #2563eb;
+}
+
+.bubble {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 1rem;
+  line-height: 1.5;
+  border: 1px solid #e5e7eb;
+  box-shadow: none;
+}
+
+.bubbleIncoming {
+  border-radius: 0 0.75rem 0.75rem 0.75rem;
+  background-color: #d4d4d4;
+}
+
+.bubbleOutgoing {
+  border-radius: 0.75rem 0 0.75rem 0.75rem;
+  background-color: #e0e7ff;
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: -0.75rem;
+}
+
+.metaOutgoing {
+  flex-direction: row-reverse;
+}
+
+.from {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+.fromIncoming {
+  padding-right: 1rem;
+}
+
+.fromOutgoing {
+  padding-left: 1rem;
+}
+
+.text {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  color: #111827;
+  white-space: break-spaces;
+  overflow-wrap: anywhere;
+  word-break: break-all;
+}
+
+.timestampRow {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  margin-bottom: -0.75rem;
+  padding-top: 0.5rem;
+}
+
+.timestampRowIncoming {
+  justify-content: flex-end;
+}
+
+.timestamp {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 400;
+  color: #6b7280;
+}
+
+.timestampIncoming {
+  text-align: end;
+}
