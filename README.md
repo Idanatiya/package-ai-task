@@ -1,4 +1,4 @@
-# Chat Find-in-Page
+# Package.ai FE Task -  Idan Atiya 
 
 A React chat UI with browser-style find-in-page search (Ctrl+F / Cmd+F).
 
