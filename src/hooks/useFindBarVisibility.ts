@@ -3,12 +3,10 @@ import { useEffect, useState } from "react";
 export function useFindBarVisibility() {
   const [isOpen, setIsOpen] = useState(false);
 
-  // Global shortcut: always available
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
       const isCtrlOrCmd = event.metaKey || event.ctrlKey;
 
-      // Ctrl+Shift+F is "find in files" in most tools, so leave that combo alone.
       if (event.key.toLowerCase() === "f" && isCtrlOrCmd && !event.shiftKey) {
         event.preventDefault();
         setIsOpen(true);
@@ -20,7 +18,6 @@ export function useFindBarVisibility() {
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, []);
 
-  // Escape: only while the panel is open
   useEffect(() => {
     if (!isOpen) return;
 
