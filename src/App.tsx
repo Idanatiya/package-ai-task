@@ -5,6 +5,8 @@ import FindBar from "./components/FindBar";
 import items from "./assets/msgs.json";
 import type { ChatMessageItem } from "./types/chat";
 import { useFindBarVisibility } from "./hooks/useFindBarVisibility";
+import { useMatchNavigation } from "./hooks/useMatchNavigation";
+import { useScrollToActiveMatch } from "./hooks/useScrollToActiveMatch";
 import { buildMatches } from "./utils/search";
 import styles from "./App.module.css";
 
@@ -15,6 +17,16 @@ function App() {
   const [searchTerm, setSearchTerm] = useState("");
 
   const matches = buildMatches(messages, searchTerm);
+  const { activeIndex, next, prev, reset } = useMatchNavigation(matches.length);
+  useScrollToActiveMatch(activeIndex, searchTerm);
+
+  const activeMatch = matches[activeIndex] ?? null;
+
+  // A new term rebuilds the array, so the old index no longer points anywhere.
+  const handleSearchTermChange = (term: string) => {
+    setSearchTerm(term);
+    reset();
+  };
 
   return (
     <div className={styles.screen}>
@@ -23,25 +35,31 @@ function App() {
           <ChatHeader />
         </div>
         <ul className={styles.messages}>
-          {messages.map((item) => (
-            <ChatMessage
-              key={item.id}
-              item={item}
-              searchTerm={searchTerm}
-              activeField={null}
-              activeOccurrence={null}
-            />
-          ))}
+          {messages.map((item) => {
+            // Narrowed to primitives so only the two affected bubbles re-render.
+            const active =
+              activeMatch?.messageId === item.id ? activeMatch : null;
+
+            return (
+              <ChatMessage
+                key={item.id}
+                item={item}
+                searchTerm={searchTerm}
+                activeField={active?.field ?? null}
+                activeOccurrence={active?.occurrence ?? null}
+              />
+            );
+          })}
         </ul>
       </div>
       {isOpen && (
         <FindBar
           searchTerm={searchTerm}
-          onSearchTermChange={setSearchTerm}
+          onSearchTermChange={handleSearchTermChange}
           matchCount={matches.length}
-          activeIndex={0}
-          onNext={() => {}}
-          onPrev={() => {}}
+          activeIndex={activeIndex}
+          onNext={next}
+          onPrev={prev}
           onClose={() => setIsOpen(false)}
         />
       )}
