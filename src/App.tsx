@@ -1,11 +1,11 @@
-import { useDeferredValue, useState } from "react";
+import { useDeferredValue, useEffect, useMemo, useState } from "react";
 import ChatHeader from "./components/ChatHeader";
 import ChatMessage from "./components/ChatMessage";
 import FindBar from "./components/FindBar";
 import items from "./assets/msgs.json";
 import type { ChatMessageItem } from "./types/chat";
 import { useFindBarVisibility } from "./hooks/useFindBarVisibility";
-import { useFindNavigation } from "./hooks/useFindNavigation";
+import { useMatchNavigation } from "./hooks/useMatchNavigation";
 import { buildMatches } from "./utils/search";
 import styles from "./App.module.css";
 
@@ -18,15 +18,21 @@ function App() {
   const deferredTerm = useDeferredValue(searchTerm);
   const isPending = searchTerm !== deferredTerm;
 
-  const matches = buildMatches(messages, deferredTerm);
-  const { activeIndex, next, prev, reset } = useFindNavigation(matches.length);
+  const matches = useMemo(
+    () => buildMatches(messages, deferredTerm),
+    [deferredTerm],
+  );
+  const { activeIndex, next, prev, reset } = useMatchNavigation(matches.length);
+
+  useEffect(() => {
+    reset();
+  }, [deferredTerm, reset]);
 
   const highlightTerm = isOpen ? deferredTerm : "";
   const highlightMatch = isOpen ? (matches[activeIndex] ?? null) : null;
 
   const handleSearchTermChange = (term: string) => {
     setSearchTerm(term);
-    reset();
   };
 
   return (

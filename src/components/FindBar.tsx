@@ -36,6 +36,7 @@ export default function FindBar({
 
   const hasTerm = searchTerm.trim().length > 0;
   const hasMatches = matchCount > 0;
+  const currentMatchCount = hasMatches ? activeIndex + 1 : 0;
 
   const handleKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
     if (event.key !== "Enter" || !hasMatches) return;
@@ -72,7 +73,7 @@ export default function FindBar({
             )}
             aria-live="polite"
           >
-            {hasTerm ? `${hasMatches ? activeIndex + 1 : 0}/${matchCount}` : ""}
+            {hasTerm ? `${currentMatchCount}/${matchCount}` : ""}
           </span>
           <span className={styles.divider} />
           <FindBarActions

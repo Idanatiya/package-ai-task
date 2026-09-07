@@ -1,44 +1,26 @@
 import { useCallback, useState } from "react";
 
-function clampIndex(index: number, matchCount: number): number {
-  if (matchCount === 0) return 0;
-
-  return Math.min(index, matchCount - 1);
-}
-
-/**
- * A wrapping cursor over the match list. Takes the count rather than the array
- * so the callbacks only change when the number of matches does.
- */
-export function useMatchNavigation(matchCount: number) {
+export function useMatchNavigation(totalMatches: number) {
   const [activeIndex, setActiveIndex] = useState(0);
-  const clampedIndex = clampIndex(activeIndex, matchCount);
+
+  const hasMatches = totalMatches > 0;
+  const lastMatchIndex = totalMatches - 1;
 
   const next = useCallback(() => {
-    if (matchCount === 0) return;
+    if (!hasMatches) return;
 
-    setActiveIndex((index) => {
-      const current = clampIndex(index, matchCount);
-      const isLastMatch = current === matchCount - 1;
-
-      return isLastMatch ? 0 : current + 1;
-    });
-  }, [matchCount]);
+    setActiveIndex((index) => (index === lastMatchIndex ? 0 : index + 1));
+  }, [hasMatches, lastMatchIndex]);
 
   const prev = useCallback(() => {
-    if (matchCount === 0) return;
+    if (!hasMatches) return;
 
-    setActiveIndex((index) => {
-      const current = clampIndex(index, matchCount);
-      const isFirstMatch = current === 0;
-
-      return isFirstMatch ? matchCount - 1 : current - 1;
-    });
-  }, [matchCount]);
+    setActiveIndex((index) => (index === 0 ? lastMatchIndex : index - 1));
+  }, [hasMatches, lastMatchIndex]);
 
   const reset = useCallback(() => {
     setActiveIndex(0);
   }, []);
 
-  return { activeIndex: clampedIndex, next, prev, reset };
+  return { activeIndex, next, prev, reset };
 }
